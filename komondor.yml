@@ -1,0 +1,32 @@
+# Komondor example configuration
+
+# Log path for service. You can use 'stdout' to print logs to
+# terminal instead of log file.
+komondor.log: komondor.log
+
+# API endpoint for accessing Ranched data. Endpoint is used ONLY
+# for collecting metrics data.
+rancher.endpoint: https://localhost/v2-beta
+
+# Generated access key. Must be present.
+rancher.api-access-key: 
+
+# Generated secret key. Must be present.
+rancher.api-secret-key: 
+
+# If set, retrieve metrics for only these containers.
+#rancher.collect: [container1, container2, container3]
+
+# If set, retrieve metrics for all containers except these. Excludes rancher.collect-for option.
+#rancher.filter: [container1, container2]
+
+# Riemann host for accepting connections.
+riemann.host: 192.168.1.1
+riemann.port: 5554
+
+# TLS options.
+#riemann.tls: true
+#riemann.key: client.pkcs8
+#riemann.cert: client.crt
+#riemann.ca-cert: ca.crt
+
