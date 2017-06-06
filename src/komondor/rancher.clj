@@ -30,7 +30,6 @@
 (defn- collect-hosts
   "Collect hosts from given environment."
   [config env]
-  ;; https://ranch.verser.info/v2-beta/projects/1a5/hosts/
   (let [ret (http-get config (str "/projects/" env "/hosts/"))]
     (reduce (fn [coll item]
               (let [o (get item "links")]
