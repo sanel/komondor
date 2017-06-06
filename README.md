@@ -1,4 +1,4 @@
-# komondor
+# Komondor
 
 Service for forwarding [Rancher](http://rancher.com/) monitoring data
 to [Riemann](http://riemann.io/).
